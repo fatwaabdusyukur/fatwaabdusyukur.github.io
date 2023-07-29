@@ -2,6 +2,7 @@ window.onload = function () {
   document
     .querySelector("header button")
     .addEventListener("click", (button) => {
+      button.preventDefault();
       const nav = document.querySelector(".nav-link-container");
       nav.classList.toggle("hidden");
 

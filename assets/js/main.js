@@ -1,12 +1,12 @@
 const appEl = document.getElementById("app");
 
 const fileEJS = {
-  header: "../../templates/header.ejs",
-  footer: "../../templates/footer.ejs",
+  header: "/templates/header.ejs",
+  footer: "/templates/footer.ejs",
 };
 
 const pages = {
-  home: "../../pages/home.ejs",
+  home: "/pages/home.ejs",
 };
 
 async function loadEJS(path) {

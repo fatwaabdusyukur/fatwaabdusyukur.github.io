@@ -7,6 +7,8 @@ module.exports = {
   },
   fontFamily: {
     tektur: ["tektur"],
+    synemono: ["synemono"],
+    vt323: ["vt323"],
   },
   plugins: [],
 };

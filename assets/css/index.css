@@ -7,6 +7,16 @@
   src: url("./../font/tektur.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "synemono";
+  src: url("./../font/synemono.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "vt323";
+  src: url("./../font/vt323.ttf") format("truetype");
+}
+
 .flip-one {
   @apply translate-y-[8px] rotate-45;
 }
@@ -20,6 +30,30 @@
 }
 
 @layer components {
+  #app {
+    @apply relative;
+  }
+
+  header {
+    @apply px-5 py-3 bg-black relative;
+  }
+
+  .navbar {
+    @apply flex flex-col sm:flex-row justify-evenly items-center;
+  }
+
+  .nav-header {
+    @apply md:basis-[50%] lg:basis-[40%] flex items-center justify-evenly sm:justify-start w-full;
+  }
+
+  .nav-header h1 {
+    @apply font-[tektur] cursor-pointer text-gray-200 justify-self-start;
+  }
+
+  .nav-header button {
+    @apply flex flex-col gap-1 sm:hidden cursor-pointer;
+  }
+
   .nav-link-container {
     @apply md:basis-[30%] lg:basis-[20%] h-[150px] sm:h-fit sm:items-center;
   }
@@ -30,5 +64,21 @@
 
   .hamburger-menu {
     @apply w-6 h-1 bg-gray-200 transform transition-all duration-300 ease-in-out;
+  }
+
+  .jumbotron {
+    @apply bg-zinc-950 h-[350px] flex flex-col justify-center items-center;
+  }
+
+  .jumbotron img {
+    @apply grayscale w-[7rem] h-[7rem] md:w-[6rem] md:h-[6rem] bg-cover;
+  }
+
+  .jumbotron h2 {
+    @apply font-[synemono] text-gray-100 text-[14px] sm:text-[17px] mt-5;
+  }
+
+  .jumbotron p {
+    @apply text-2xl font-[vt323] text-gray-100 text-center mt-2;
   }
 }
