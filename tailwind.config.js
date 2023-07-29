@@ -5,5 +5,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  fontFamily: {
+    tektur: ["tektur"],
+  },
   plugins: [],
 };

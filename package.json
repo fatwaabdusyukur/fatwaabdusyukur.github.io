@@ -2,6 +2,7 @@
   "name": "fatwaabdusyukur.github.io",
   "version": "1.0",
   "description": "",
+  "main": "index.html",
   "scripts": {
     "style": "npx tailwindcss -i ./assets/css/index.css -o ./assets/css/style.css --watch"
   },
