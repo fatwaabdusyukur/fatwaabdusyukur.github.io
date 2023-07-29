@@ -3,3 +3,41 @@
   <h2>Hi, Im Fatwa &#9889;</h2>
   <p>A Software Developer<br />Specially in Web Development</p>
 </div>
+<div class="language-list">
+  <img src="/assets/img/icon-html.png" alt="html-logo" />
+  <img src="/assets/img/icon-css.png" alt="css-logo" />
+  <img src="/assets/img/icon-js.png" alt="javascript-logo" />
+  <img src="/assets/img/icon-kotlin.png" alt="kotlin-logo" />
+  <img src="/assets/img/icon-python.png" alt="python-logo" />
+</div>
+
+<div class="project-container">
+  <% data.forEach(project => { %>
+  <div class="project-card" data-id="<%= project.id %>">
+    <div class="project-header">
+      <div class="inline-flex items-center">
+        <img src="/assets/img/profile.png" alt="profile" />
+        <h4>Fatwa</h4>
+        <p>&#10004;</p>
+      </div>
+      <a href="<%= project.github %>" target="_blank">GITHUB</a>
+    </div>
+    <div class="project-body">
+      <h4><%= project.title %></h4>
+      <p class="truncate"><%= project.description %></p>
+      <button type="button">More...</button>
+      <div class="carousel">
+        <button type="button" class="carousel-button">&#10096;</button>
+        <button type="button" class="carousel-button">&#10097;</button>
+        <ul>
+          <% project.images.forEach(image => { %>
+          <li class="carousel-item">
+            <img src="<%= image %>" />
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <% }) %>
+</div>

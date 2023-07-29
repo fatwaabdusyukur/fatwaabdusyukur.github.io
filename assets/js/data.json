@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "DEFIL",
+      "description": "DeFil is a chrome extension used to classify defamatory sentences on Twitter. The classification process uses the help of machine learning models, this project is written using the Python and JavaScript programming languages.",
+      "images": [
+        "/assets/img/defil-poster.jpg",
+        "/assets/img/defil-1.jpg",
+        "/assets/img/defil-2.png",
+        "/assets/img/defil-3.jpg"
+      ],
+      "github": "https://github.com/fatwaabdusyukur/defil",
+      "video": "none"
+    },
+    {
+      "id": 1,
+      "title": "DOTCOW",
+      "description": "Dotcow is an expert system for diagnosing cattle disease based on a website. This expert system uses a forward chaining algorithm for its inference engine, while the programming language used in developing this system uses ReactJS for the front-end, nodeJS and Express for the back-end and MySQL for the database.",
+      "images": [
+        "/assets/img/dotcow-poster.jpg",
+        "/assets/img/dotcow-1.jpg",
+        "/assets/img/dotcow-2.jpg",
+        "/assets/img/dotcow-3.jpg"
+      ],
+      "github": "#",
+      "video": "none"
+    },
+    {
+      "id": 2,
+      "title": "MONU",
+      "description": "MONU (Monitoring Nutrition) is an android application that is used to monitor a user's nutritional status, this application was developed using the Kotlin programming language and SQLlite for its local database.",
+      "images": [
+        "/assets/img/monu-poster.jpg",
+        "/assets/img/monu-1.jpg",
+        "/assets/img/monu-2.jpg",
+        "/assets/img/monu-3.jpg"
+      ],
+      "github": "https://github.com/fatwaabdusyukur/monu",
+      "video": "none"
+    }
+  ]
+}

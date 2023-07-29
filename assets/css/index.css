@@ -81,4 +81,80 @@
   .jumbotron p {
     @apply text-2xl font-[vt323] text-gray-100 text-center mt-2;
   }
+
+  .language-list {
+    @apply hidden sm:flex bg-zinc-800 w-full h-[150px] justify-evenly items-center;
+  }
+
+  .language-list img {
+    @apply h-20 w-20 bg-cover grayscale;
+  }
+
+  .project-container {
+    @apply w-full bg-zinc-950 flex flex-col items-center justify-center gap-y-1;
+  }
+
+  .project-card {
+    @apply w-[22rem] md:w-[27rem] lg:w-[37rem] bg-zinc-700 rounded py-4 px-3 hover:bg-zinc-600 my-3;
+  }
+
+  .project-header {
+    @apply w-[20%] mt-2 ml-3;
+  }
+
+  .project-header img {
+    @apply w-14 h-14 mr-3 grayscale;
+  }
+
+  .project-header h4 {
+    @apply font-bold font-[tektur] text-white mr-1;
+  }
+
+  .project-header a {
+    @apply rounded-full hover:bg-white hover:text-blue-950 cursor-pointer bg-blue-950 px-3 mt-2 text-white mt-1 text-sm font-bold;
+  }
+
+  .project-body {
+    @apply block px-3 mt-2 overflow-hidden;
+  }
+
+  .project-body h4 {
+    @apply font-bold text-white text-2xl font-[vt323];
+  }
+
+  .project-body p {
+    @apply text-white text-justify;
+  }
+
+  .project-body button {
+    @apply text-blue-400 font-bold;
+  }
+
+  .carousel {
+    @apply relative w-full h-[30vh] md:h-[23vh] lg:h-[55vh] mt-2 cursor-pointer;
+  }
+
+  .carousel-item {
+    @apply absolute inset-0 opacity-0 transition-opacity duration-200 ease-in-out delay-200;
+  }
+
+  .carousel-item img {
+    @apply w-full h-full object-cover object-center;
+  }
+
+  .carousel-item[data-active] {
+    @apply opacity-100 z-[1] delay-0;
+  }
+
+  .carousel-button {
+    @apply absolute z-[5] text-2xl top-[40%] sm:top-[35%] sm:text-6xl text-zinc-600/20 hover:text-zinc-900 leading-none duration-700;
+  }
+
+  .carousel-button:first-child {
+    @apply left-3;
+  }
+
+  .carousel-button:nth-child(2) {
+    @apply right-3;
+  }
 }

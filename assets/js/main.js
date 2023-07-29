@@ -18,6 +18,16 @@ async function loadEJS(path) {
   }
 }
 
+async function fetchData() {
+  try {
+    const response = await fetch("/assets/js/data.json");
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 function renderEJS(template, data) {
   const renderedTemplate = ejs.render(template, data);
   appEl.innerHTML = renderedTemplate;
@@ -25,6 +35,8 @@ function renderEJS(template, data) {
 
 function displayApp() {
   let templates = [];
+  let data = [];
+  fetchData().then((res) => (data = [...res.projects]));
 
   for (const route in fileEJS) {
     templates.push(loadEJS(fileEJS[route]));
@@ -36,7 +48,7 @@ function displayApp() {
     ([headerContent, indexContent, footerContent]) => {
       const combinedString =
         headerContent + "\n" + indexContent + "\n" + footerContent;
-      renderEJS(combinedString, {});
+      renderEJS(combinedString, {data: data});
     }
   );
 }
