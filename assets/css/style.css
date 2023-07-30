@@ -685,7 +685,7 @@ header {
 
 .jumbotron h2 {
   margin-top: 1.25rem;
-  font-family: synemono;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -705,6 +705,11 @@ header {
   line-height: 2rem;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.reactive-text {
+  font-weight: 700;
+  color: rgb(59 130 246 / 0.7);
 }
 
 .language-list {
@@ -1012,24 +1017,6 @@ header {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-@font-face {
-  font-family: "tektur";
-
-  src: url("./../font/tektur.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "synemono";
-
-  src: url("./../font/synemono.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "vt323";
-
-  src: url("./../font/vt323.ttf") format("truetype");
-}
-
 .flip-one {
   --tw-translate-y: 8px;
   --tw-rotate: 45deg;
@@ -1044,6 +1031,82 @@ header {
 
 .dissepear {
   opacity: 0;
+}
+
+.after\:mr-0::after {
+  content: var(--tw-content);
+  margin-right: 0px;
+}
+
+.after\:mr-0\.5::after {
+  content: var(--tw-content);
+  margin-right: 0.125rem;
+}
+
+.after\:inline-block::after {
+  content: var(--tw-content);
+  display: inline-block;
+}
+
+@keyframes type {
+  0% {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+
+  50% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+}
+
+.after\:animate-\[type\]::after {
+  content: var(--tw-content);
+  animation: type;
+}
+
+@keyframes type {
+  0% {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+
+  50% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+}
+
+.after\:animate-\[type_1s_\]::after {
+  content: var(--tw-content);
+  animation: type 1s;
+}
+
+@keyframes type {
+  0% {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+
+  50% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+}
+
+.after\:animate-\[type_1s_linear_infinite\]::after {
+  content: var(--tw-content);
+  animation: type 1s linear infinite;
+}
+
+.after\:text-blue-500\/70::after {
+  content: var(--tw-content);
+  color: rgb(59 130 246 / 0.7);
+}
+
+.after\:content-\[\'\|\'\]::after {
+  --tw-content: '|';
+  content: var(--tw-content);
 }
 
 .hover\:text-gray-600:hover {

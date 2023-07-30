@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "tektur";
-  src: url("./../font/tektur.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "synemono";
-  src: url("./../font/synemono.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "vt323";
-  src: url("./../font/vt323.ttf") format("truetype");
-}
-
 .flip-one {
   @apply translate-y-[8px] rotate-45;
 }
@@ -75,11 +60,15 @@
   }
 
   .jumbotron h2 {
-    @apply font-[synemono] text-gray-100 text-[14px] sm:text-[17px] mt-5;
+    @apply font-mono text-gray-100 text-[14px] sm:text-[17px] mt-5;
   }
 
   .jumbotron p {
     @apply text-2xl font-[vt323] text-gray-100 text-center mt-2;
+  }
+
+  .reactive-text {
+    @apply font-bold text-blue-500/70;
   }
 
   .language-list {

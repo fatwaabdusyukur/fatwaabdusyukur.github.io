@@ -3,12 +3,21 @@ module.exports = {
   mode: "jit",
   content: ["*.html", "./templates/**/*.ejs", "./pages/**/*.ejs"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        type: {
+          "0%": { opacity: "100%" },
+          "50%": { opacity: "0" },
+        },
+      },
+      animation: {
+        type: "type 1s linear infinite",
+      },
+    },
   },
   fontFamily: {
-    tektur: ["tektur"],
-    synemono: ["synemono"],
-    vt323: ["vt323"],
+    tektur: ["Tektur"],
+    vt323: ["VT323"],
   },
   plugins: [],
 };
