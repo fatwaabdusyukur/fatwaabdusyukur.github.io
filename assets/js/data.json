@@ -11,7 +11,7 @@
         "/assets/img/defil-3.jpg"
       ],
       "github": "https://github.com/fatwaabdusyukur/defil",
-      "video": "none"
+      "video": "/assets/video/defil-test.mp4"
     },
     {
       "id": 1,
@@ -24,7 +24,7 @@
         "/assets/img/dotcow-3.jpg"
       ],
       "github": "#",
-      "video": "none"
+      "video": "/assets/video/dotcow-test.mp4"
     },
     {
       "id": 2,
@@ -37,7 +37,7 @@
         "/assets/img/monu-3.jpg"
       ],
       "github": "https://github.com/fatwaabdusyukur/monu",
-      "video": "none"
+      "video": "/assets/video/monu-test.mp4"
     }
   ]
 }

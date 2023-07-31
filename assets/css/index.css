@@ -14,6 +14,14 @@
   @apply opacity-0;
 }
 
+.show-modal {
+  @apply opacity-100 visible;
+}
+
+.hide-modal {
+  @apply opacity-0 invisible;
+}
+
 @layer components {
   #app {
     @apply relative;
@@ -136,14 +144,22 @@
   }
 
   .carousel-button {
-    @apply absolute z-[5] text-2xl top-[40%] sm:top-[35%] sm:text-6xl text-zinc-600/20 hover:text-zinc-900 leading-none duration-700;
+    @apply absolute z-[5] text-2xl top-[40%] sm:top-[35%] sm:text-6xl text-zinc-600/20 hover:text-zinc-900 leading-none duration-700 first:left-3 even:right-3;
   }
 
-  .carousel-button:first-child {
-    @apply left-3;
+  .modal-container {
+    @apply w-full h-screen fixed z-[5] bg-black/80 top-0 left-0 flex justify-center items-center transform transition-opacity duration-1000;
   }
 
-  .carousel-button:nth-child(2) {
-    @apply right-3;
+  .modal {
+    @apply w-[300px] sm:w-[500px] bg-gray-200 p-3 rounded relative;
+  }
+
+  .modal button {
+    @apply absolute -top-5 -right-4 bg-red-600 align-middle text-center leading-none py-[5px] px-3 rounded-sm text-white font-bold text-3xl;
+  }
+
+  .modal h2 {
+    @apply font-[vt323] font-bold text-xl text-black;
   }
 }

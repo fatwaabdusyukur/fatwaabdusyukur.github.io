@@ -8,6 +8,7 @@
     ></span>
   </p>
 </div>
+
 <div class="language-list">
   <img src="/assets/img/icon-html.png" alt="html-logo" />
   <img src="/assets/img/icon-css.png" alt="css-logo" />
@@ -18,7 +19,12 @@
 
 <div class="project-container">
   <% data.forEach(project => { %>
-  <div class="project-card" data-id="<%= project.id %>">
+  <div class="project-card">
+    <input
+      type="hidden"
+      value="<%= project.video %>"
+      data-title="<%= project.title %>"
+    />
     <div class="project-header">
       <div class="inline-flex items-center">
         <img src="/assets/img/profile.png" alt="profile" />
@@ -45,4 +51,22 @@
     </div>
   </div>
   <% }) %>
+</div>
+
+<div class="modal-container hide-modal">
+  <div class="modal">
+    <button type="button">&#10799;</button>
+    <div class="modal-header">
+      <h2>App Name</h2>
+      <div class="modal-body">
+        <iframe
+          src=""
+          frameborder="0"
+          class="w-full"
+          allowfullscreen
+          sandbox
+        ></iframe>
+      </div>
+    </div>
+  </div>
 </div>
